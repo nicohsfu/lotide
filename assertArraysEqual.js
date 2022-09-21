@@ -7,7 +7,7 @@ const eqArrays = function(arr1, arr2) {
       result = false;
     }
   }
-  
+
   console.log(result);
   return result;
 };
@@ -18,10 +18,10 @@ const assertArraysEqual = function(arr1, arr2) {
   let comparison = eqArrays(arr1, arr2);
 
   if (comparison) {
-    console.log("this is true");
+    // console.log("this is true"); //test
     return true;
   } else {
-    console.log("this is false");
+    // console.log("this is false"); //test
     return false;
   }
 
