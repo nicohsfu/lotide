@@ -15,7 +15,7 @@ const countOnly = function(allItems, itemsToCount) {
 
   };
 
-  // for... of loop - for element of array
+  // for... of loop - "for element of array"
   for (const item of allItems) {
     // inside the loop, 
     // increment the counter for each item:
@@ -29,7 +29,7 @@ const countOnly = function(allItems, itemsToCount) {
         results[item] = 1;     // if the results object (at the top of this function) DOES NOT have a key "Agouhanna", for example, then create that key and assign 1 as its value or count
       }
     }
-  };
+  }
 
   return results;
 };
