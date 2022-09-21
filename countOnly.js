@@ -10,7 +10,6 @@ const assertEqual = function(actual, expected) {
 // new function below
 // allItems: an *array* - of strings that we need to look through
 // itemsToCount: an *object* - specifying what to count
-//array    //object
 const countOnly = function(allItems, itemsToCount) {
   const results = {
 
@@ -25,7 +24,7 @@ const countOnly = function(allItems, itemsToCount) {
 
     if (itemsToCount[item]) {  // looping through array - starts with "Karl" in this example, once there's a hit then the condition is met and the inside of this first if-statement is next
       if (results[item]) {     // if the results object (at the top of this function) have a key "Agouhanna", for example, then just increment its count
-        results[item] += 1; 
+        results[item] += 1;
       } else {
         results[item] = 1;     // if the results object (at the top of this function) DOES NOT have a key "Agouhanna", for example, then create that key and assign 1 as its value or count
       }
