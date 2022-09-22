@@ -46,6 +46,7 @@ const map = function(array, callback) {
 // below, arg1 (words) is the words array, arg2 (word) is the element's value in the array
 // word[0] actually means "ground"[0], which returns "g" because it's the letter on index 0 of the word "ground"
 const results1 = map(words, word => word[0]); 
+// The map() method creates a new array populated with the results of calling a provided function on every element in the calling array. 
 
 console.log(results1);
 
