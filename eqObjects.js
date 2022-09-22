@@ -70,4 +70,4 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log("test", eqObjects(cd, cd2)); // => false
 
 
-console.log("eqArrays: ", eqArrays(["2", 3], ["2", 3, 4]));
+// console.log("eqArrays: ", eqArrays(["2", 3], ["2", 3, 4]));
