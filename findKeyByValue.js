@@ -21,7 +21,7 @@ const findKeyByValue = function(obj, val) {
     }
   }
 
-  console.log("this is my output: ", output); //test
+  // console.log("this is my output: ", output); //test
   return output;
 };
 
