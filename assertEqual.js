@@ -7,8 +7,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(5, 6);
+// exporting the function from this module, 
+// notice we're NOT calling the function, eg. assertEqual, NOT assertEqual()
+module.exports = assertEqual;
+
+// TEST CODE is in another file now, under /lotide/test

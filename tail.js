@@ -1,11 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed:  ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const tail = function(oldArr) {
   let newArr = [];
@@ -17,12 +11,6 @@ const tail = function(oldArr) {
 
   return newArr;
 };
-
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(5, 6);
 
 // Test Case: Check the original array
 const words = ["Yo Yo", "Lighthouse", "Labs"];
