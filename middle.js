@@ -1,32 +1,8 @@
 // old function from a previous activity
-const eqArrays = function(arr1, arr2) {
-  let result = true;
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      result = false;
-    }
-  }
-
-  console.log(result);
-  return result;
-};
+const eqArrays = require('./eqArrays');
 
 // old function from a previous activity
-const assertArraysEqual = function(arr1, arr2) {
-
-  let comparison = eqArrays(arr1, arr2);
-
-  if (comparison) {
-    // console.log("this is true"); //test
-    return true;
-  } else {
-    // console.log("this is false"); //test
-    return false;
-  }
-
-};
-
+const assertArraysEqual = require('./assertArraysEqual');
 
 // new function below
 const middle = function(arr) {
@@ -49,7 +25,7 @@ const middle = function(arr) {
     }
 
     if (arr.length % 2 === 0) { // if even numbered # of elements 
-    
+
       //get the average length by dividing the array length by 2
       //math round down cause index has to be a whole number
 
@@ -69,24 +45,8 @@ const middle = function(arr) {
 
   } // outside-most if statement
 
-  console.log(newArr);
+  // console.log(newArr);
+  return newArr;
 };
 
-
-// ------ 
-
-// tests
-// For arrays with one or two elements, there is no middle. Return an empty array.
-
-middle([1]); // => []
-middle([1, 2]); // => []
-
-// For arrays with odd number of elements, an array containing a single middle element should be returned.
-
-middle([1, 2, 3]); // => [2]
-middle([1, 2, 3, 4, 5]); // => [3]
-
-// For arrays with an even number of elements, an array containing the two elements in the middle should be returned
-
-middle([1, 2, 3, 4]); // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
+module.exports = middle;
