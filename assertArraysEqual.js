@@ -1,16 +1,4 @@
-// old function from a previous activity
-const eqArrays = function(arr1, arr2) {
-  let result = true;
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      result = false;
-    }
-  }
-
-  console.log(result);
-  return result;
-};
+const eqArrays = require('./eqArrays');
 
 // new function below
 const assertArraysEqual = function(arr1, arr2) {
@@ -27,6 +15,4 @@ const assertArraysEqual = function(arr1, arr2) {
 
 };
 
-//tests
-assertArraysEqual([1, 2, 3], [1, 2, 3]); //true
-assertArraysEqual([1, 2, 3], [1, 2, "3"]); //false
+module.exports = assertArraysEqual;
